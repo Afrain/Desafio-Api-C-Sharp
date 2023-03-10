@@ -20,6 +20,8 @@ o um identificador se é conta a pagar ou paga.
 
 ![image](https://user-images.githubusercontent.com/9250787/224207909-4187597f-c448-4324-9f1a-2f181713369b.png)
 
+### Query
+
 SELECT p.nome, 'Contas Pagas' as Origem, cPagas.*, cPagas.valor + cPagas.acrescimo - cPagas.desconto as Vlr_Liquido  
 FROM Pessoas p  
 INNER JOIN ContasPagas cPagas ON cPagas.codigoFornecedor = p.codigo  
